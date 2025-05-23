@@ -66,6 +66,14 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+.photo-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
 footer {
   text-align: center;
   font-size: 0.8rem;

@@ -1,15 +1,8 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(
-  135deg,
-  #e0d9f8 0%,
-  #f3f0ff 25%,
-  #ffffff 50%,
-  #f3f0ff 75%,
-  #e0d9f8 100%
-);
-background-size: 100% 1600px;
+  background: repeating-linear-gradient(135deg, #f7fafd 0%, #e3ecf6 50%, #f7fafd 100%);
+  background-size: 100% 300px;
 }
 
 .navbar {

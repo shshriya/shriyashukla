@@ -1,79 +1,87 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #e6e2d3; /* Pantone Warm Gray 1 C */
-  color: #222;
+  background: linear-gradient(135deg, #edece6 0%, #dcdad3 100%); /* Gradient using Pantone Warm Gray 1 C tones */
+  color: #333;
 }
 
-.wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
 }
 
-.greeting {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
 }
 
-.name {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.3s;
 }
 
-.main-section {
+.nav-links a:hover {
+  color: #6b4f3b;
+}
+
+.hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 4rem 6rem;
   flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 2rem;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #6b4f3b;
+}
+
+.name {
+  font-size: 3.5rem;
+  margin: 0.5rem 0;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.hero-img img {
+  width: 300px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .about {
-  flex: 1 1 60%;
-  text-align: left;
+  padding: 3rem 6rem;
+  background: #f6f5f0;
 }
 
-.photo {
-  flex: 1 1 30%;
-  display: flex;
-  justify-content: center;
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.photo-placeholder {
-  width: 200px;
-  height: 200px;
-  background: #ccc;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-}
-
-.icon-nav {
-  display: flex;
-  justify-content: space-around;
-  padding: 2rem 0 1rem;
-  border-top: 1px solid #aaa;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.icon-nav a {
-  text-decoration: none;
-  color: #222;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 0.9rem;
-}
-
-.icon-nav img {
-  width: 30px;
-  height: 30px;
-  margin-bottom: 0.5rem;
+.about p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 700px;
 }

@@ -2,10 +2,10 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background: linear-gradient(
-  to bottom right,
-  #f7fafd 0%,
-  #f0f6fb 50%,
-  #e3ecf6 100%
+  135deg,
+  #e3ecf6,
+  #f7fafd,
+  #eaf4f8
 );
 }
 

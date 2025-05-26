@@ -7,13 +7,9 @@ body {
   #f3f0ff 25%,
   #ffffff 50%,
   #f3f0ff 75%,
-  #e0d9f8 100%,
-  #f3f0ff 75%,
-  #ffffff 50%,
-  #f3f0ff 25%,
-  #e0d9f8 0%,
+  #e0d9f8 100%
 );
-background-size: 100% 800px;
+background-size: 100% 1600px;
 background-repeat: repeat-y;
 }
 

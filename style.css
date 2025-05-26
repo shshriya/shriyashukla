@@ -1,8 +1,9 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #edece6 0%, #dcdad3 100%); /* Gradient using Pantone Warm Gray 1 C tones */
-  color: #333;
+  background: repeating-linear-gradient(135deg, #f3f0ff 0%, #e0d9f8 50%, #f3f0ff 100%);
+  background-size: 100% 300px;
+  background-repeat: repeat-y;
 }
 
 .navbar {

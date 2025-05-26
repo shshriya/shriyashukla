@@ -1,9 +1,16 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: repeating-linear-gradient(135deg, #f3f0ff 0%, #e0d9f8 50%, #f3f0ff 100%);
-  background-size: 100% 300px;
-  background-repeat: repeat-y;
+  background: linear-gradient(
+  135deg,
+  #e0d9f8 0%,
+  #f3f0ff 25%,
+  #ffffff 50%,
+  #f3f0ff 75%,
+  #e0d9f8 100%
+);
+background-size: 100% 800px;
+background-repeat: repeat-y;
 }
 
 .navbar {

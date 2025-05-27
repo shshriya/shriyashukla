@@ -59,37 +59,40 @@ body {
 
 .profile-img {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 210px;
+  height: 210px;
   border-radius: 50%;
   overflow: hidden;
-  margin: 1rem auto 2rem;
+  margin: 1.5rem auto 2.5rem;
   cursor: pointer;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .profile-img img {
   position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: translate(-50%, -50%);
   transition: opacity 0.5s ease, transform 0.4s ease;
   border-radius: 50%;
 }
 
 .profile-img .back {
   opacity: 0;
-  transform: scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .profile-img:hover .back {
   opacity: 1;
-  transform: scale(1.05);
+  transform: translate(-50%, -50%) scale(1.05);
 }
 
 .profile-img:hover .front {
   opacity: 0;
-  transform: scale(0.95);
+  transform: translate(-50%, -50%) scale(0.95);
 }
 
 .hero {

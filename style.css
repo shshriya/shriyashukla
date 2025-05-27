@@ -43,8 +43,8 @@ body {
   text-decoration: none;
   color: #4b5563;
   font-weight: 600;
-  padding: 0.5rem 0.8rem;
-  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
   transition: background 0.3s, color 0.3s;
   white-space: nowrap;
   font-size: 0.95rem;
@@ -52,9 +52,8 @@ body {
 
 .nav-links a.active,
 .nav-links a:hover {
-  background: #dce7f2;
+  background-color: #dce7f2;
   color: #1f2937;
-  border-radius: inherit;
 }
 
 .hero {

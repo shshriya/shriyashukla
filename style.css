@@ -48,6 +48,7 @@ body {
   transition: background 0.3s, color 0.3s;
   white-space: nowrap;
   font-size: 0.95rem;
+  display: inline-block;
 }
 
 .nav-links a.active,

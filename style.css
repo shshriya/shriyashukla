@@ -82,12 +82,12 @@ body {
 
 .profile-img .back {
   opacity: 0;
-  transform: translate(-50%, -50%) scale(0.65);
+  transform: translate(-50%, -50%) scale(0.70);
 }
 
 .profile-img:hover .back {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(0.65);
+  transform: translate(-50%, -50%) scale(0.72);
 }
 
 .profile-img:hover .front {

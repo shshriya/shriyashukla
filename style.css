@@ -72,8 +72,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
-  height: 100%;
+  width: 120%;
+  height: 120%;
   object-fit: cover;
   transform: translate(-50%, -50%);
   transition: opacity 0.5s ease, transform 0.4s ease;
@@ -82,12 +82,12 @@ body {
 
 .profile-img .back {
   opacity: 0;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(0.92);
 }
 
 .profile-img:hover .back {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1.05);
+  transform: translate(-50%, -50%) scale(0.97);
 }
 
 .profile-img:hover .front {

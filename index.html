@@ -58,17 +58,7 @@
         charIndex++;
         setTimeout(type, typingDelay);
       } else {
-        cursorSpan.style.display = "none";
-      }
-    }
-
-    function erase() {
-      if (charIndex > 0) {
-        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
-        charIndex--;
-        setTimeout(erase, erasingDelay);
-      } else {
-        setTimeout(type, typingDelay);
+        cursorSpan.style.display = "none"; // hide cursor after typing is done
       }
     }
 

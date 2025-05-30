@@ -80,19 +80,12 @@ body {
   border-radius: 50%;
 }
 
+.profile-img .front {
+  animation: flipImage 20s infinite;
+}
+
 .profile-img .back {
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0.77);
-}
-
-.profile-img:hover .back {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(0.79);
-}
-
-.profile-img:hover .front {
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0.95);
+  animation: flipImageBack 20s infinite;
 }
 
 .hero {
@@ -110,7 +103,7 @@ body {
 }
 
 .intro {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: #000000;
   font-weight: 600;
   margin: 0.5rem 0;
@@ -118,6 +111,7 @@ body {
 
 .name {
   font-size: 2.5rem;
+  font-weight: 700;
   margin: 0.5rem 0;
 }
 
@@ -156,5 +150,48 @@ body {
 
   .hero-text {
     max-width: 50%;
+  }
+}
+
+/* Typing animation styles */
+.typed-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  background-color: #1f2937;
+  animation: blink 0.7s steps(1) infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes flipImage {
+  0%, 49.9% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50%, 100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+@keyframes flipImageBack {
+  0%, 49.9% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  50%, 100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
   }
 }

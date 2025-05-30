@@ -58,7 +58,7 @@
         charIndex++;
         setTimeout(type, typingDelay);
       } else {
-        setTimeout(erase, newTextDelay);
+        cursorSpan.style.display = "none";
       }
     }
 

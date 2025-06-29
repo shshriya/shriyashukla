@@ -119,35 +119,23 @@ body {
 }
 
 .image-content img {
-  width: 420px;
-  height: 320px;
+  width: 320px;
+  height: 500px;
   border-radius: 20px;
   object-fit: cover;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  display: block;
 }
 
 @media (min-width: 900px) {
-  .hero-content {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5rem;
-    padding: 4rem 3rem;
-  }
-  .text-content {
-    max-width: 54%;
-    min-width: 340px;
-    padding-left: 1rem;
-    padding-right: 2rem;
-  }
-  .image-content {
-    max-width: 46%;
-    padding-left: 2rem;
-    padding-right: 0;
-  }
   .image-content img {
-    width: 440px;
-    height: 340px;
+    width: 400px;
+    height: 650px;
+    max-height: 80vh;
+  }
+  .hero-content {
+    gap: 6rem;
+    padding: 5rem 4rem;
   }
 }
 

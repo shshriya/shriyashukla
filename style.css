@@ -61,95 +61,88 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 2.5rem 1rem;
+  min-height: 60vh;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   align-items: center;
-  max-width: 1000px;
+  gap: 2.5rem;
+  max-width: 1100px;
   width: 100%;
-}
-
-/* Add this media query for desktop layout */
-@media (min-width: 768px) {
-  .hero-content {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .text-content {
-    text-align: left;
-    align-items: flex-start;
-    max-width: 60%;
-  }
-  .image-content {
-    max-width: 40%;
-    display: flex;
-    justify-content: flex-end;
-  }
+  background: none;
 }
 
 .text-content {
   max-width: 600px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
 }
 
-.name {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin: 0.5rem 0;
-  color: #1f2937;
-}
-
-.intro {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin: 0.5rem 0 1rem;
-  color: #000;
-}
-
-.about-para {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #374151;
-  margin-top: 0.5rem;
+.image-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-content img {
-  width: 450px;
-  height: 450px;
-  border-radius: 20px; /* slight curve, not fully round */
+  width: 380px;
+  height: 380px;
+  border-radius: 20px;
   object-fit: cover;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
+  .hero-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 2.5rem 3rem;
+  }
+  .text-content {
+    text-align: left;
+    align-items: flex-start;
+    max-width: 54%;
+    min-width: 340px;
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
+  .image-content {
+    max-width: 46%;
+    justify-content: flex-end;
+    padding-right: 1rem;
+  }
   .image-content img {
-    width: 520px;
-    height: 520px;
+    width: 420px;
+    height: 420px;
   }
 }
 
-/* Typing animation */
-.typed-text {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #1f2937;
+@media (max-width: 899px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem 0.5rem;
+  }
+  .text-content {
+    text-align: center;
+    align-items: center;
+    padding: 0;
+  }
+  .image-content img {
+    width: 320px;
+    height: 320px;
+  }
 }
 
-.cursor {
-  display: inline-block;
-  width: 2px;
-  background-color: #1f2937;
-  animation: blink 0.7s steps(1) infinite;
-  margin-left: 2px;
-}
-
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+/* Remove typing animation and cursor */
+.typed-text, .cursor {
+  display: none !important;
 }

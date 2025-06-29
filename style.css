@@ -130,26 +130,28 @@ body {
 @media (min-width: 900px) {
   .hero-content {
     flex-direction: row;
-    align-items: center;         /* Vertically center text and image */
-    justify-content: space-between;
-    gap: 6rem;
-    padding: 5rem 4rem;
+    align-items: center;
+    justify-content: center; /* Center both columns horizontally */
+    gap: 3rem;               /* Reduce space between text and image */
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .text-content, .image-content {
+    flex: 1 1 0;
+    max-width: 50%;
   }
   .text-content {
-    max-width: 54%;
-    min-width: 340px;
-    padding-left: 1rem;
     padding-right: 2rem;
     align-items: flex-start;
     text-align: left;
   }
   .image-content {
-    max-width: 46%;
+    padding-left: 2rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-left: 2rem;
-    padding-right: 0;
   }
   .image-content img {
     width: 400px;

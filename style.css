@@ -100,24 +100,17 @@ body {
 }
 
 .image-content img {
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+  border-radius: 20px; /* slight curve, not fully round */
   object-fit: cover;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive two-column layout for medium and larger screens */
-@media (min-width: 768px) {
-  .hero-content {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-  }
-
-  .text-content {
-    text-align: left;
+@media (min-width: 1024px) {
+  .image-content img {
+    width: 520px;
+    height: 520px;
   }
 }
 

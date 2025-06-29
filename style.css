@@ -73,6 +73,25 @@ body {
   width: 100%;
 }
 
+/* Add this media query for desktop layout */
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .text-content {
+    text-align: left;
+    align-items: flex-start;
+    max-width: 60%;
+  }
+  .image-content {
+    max-width: 40%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
 .text-content {
   max-width: 600px;
   text-align: center;

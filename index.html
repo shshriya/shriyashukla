@@ -36,38 +36,52 @@
   <section id="resume" class="resume-section">
     <div class="resume-header">
       <h2>Resume</h2>
-      <a href="shriyashukla.pdf" class="download-btn" target="_blank" rel="noopener">Download Resume</a>
+      <a href="https://shshriya.github.io/shriyashukla/Shriya_Shukla_Resume_UMich.pdf" class="download-btn" target="_blank" rel="noopener">Download Resume</a>
     </div>
     <div class="resume-content">
       <section class="resume-block">
         <h3>Education</h3>
         <ul>
           <li>
-            <strong>University of Michigan</strong> — M.S. in IC & VLSI Design<br>
-            <span class="resume-date">2023 – Present</span>
+            <strong>University of Michigan, Ann Arbor</strong> — M.S. in Electrical Engineering and Computer Science (IC & VLSI Track)<br>
+            <span class="resume-date">Aug 2024 – Dec 2025</span><br>
+            <em>Relevant Coursework:</em> Computer Architecture, VLSI for ML, Parallel Computer Architecture, Microarchitecture, VLSI Design (Fall’25), Advanced Operating Systems (Fall’25)
           </li>
           <li>
-            <strong>XYZ University</strong> — B.Tech in Electronics Engineering<br>
-            <span class="resume-date">2019 – 2023</span>
+            <strong>Vellore Institute of Technology, Chennai</strong> — B.Tech in Electronics and Communication Engineering<br>
+            <span class="resume-date">Jul 2016 – Jun 2020</span><br>
+            <em>Relevant Coursework:</em> Semiconductor Devices and Circuits, Digital Logic Design, Applied Linear Algebra, Digital Signal Processing, VLSI System Design, Computer Organization and Architecture
           </li>
         </ul>
       </section>
       <section class="resume-block">
-        <h3>Experience</h3>
+        <h3>Professional Experience</h3>
         <ul>
           <li>
-            <strong>Verification Engineer Intern, ABC Semiconductors</strong> <span class="resume-date">Summer 2024</span>
+            <strong>Rivian Automotive, Palo Alto</strong> — Design Verification Intern<br>
+            <span class="resume-date">May 2025 – Aug 2025</span>
             <ul class="resume-bullets">
-              <li>Developed UVM-based testbenches for SoC verification.</li>
-              <li>Automated regression testing, reducing manual effort by 30%.</li>
-              <li>Collaborated with design teams to debug and resolve RTL issues.</li>
+              <li>Contributing to UVM-based design verification under the Electrical Hardware team.</li>
             </ul>
           </li>
           <li>
-            <strong>Research Assistant, University of Michigan</strong> <span class="resume-date">2023 – Present</span>
+            <strong>Qualcomm, Bangalore</strong> — Senior Performance Verification Engineer<br>
+            <span class="resume-date">Jun 2020 – Aug 2024</span>
             <ul class="resume-bullets">
-              <li>Worked on hardware acceleration for compute-intensive applications.</li>
-              <li>Designed and validated custom processor microarchitecture modules.</li>
+              <li>Verified performance for 10+ DSP cores using RTL simulation and emulation, addressing critical design issues early in the development process.</li>
+              <li>Developed micro-benchmarks in C++ and Assembly to identify and resolve performance bottlenecks in RTL simulation and emulation.</li>
+              <li>Debugged RTL setups and automation scripts, reducing workflow interruptions by over 30%.</li>
+              <li>Designed and documented performance experiments in a pre-silicon environment, providing design feedback for next-generation cores.</li>
+              <li>Diagnosed and resolved correlation issues between RTL-ISS and emulation-silicon platforms, reducing correlation error to under 5%.</li>
+              <li>Built end-to-end workflows with Python scripts to monitor power and performance across simulation platforms.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Qualcomm, Bangalore</strong> — Interim Engineering Intern<br>
+            <span class="resume-date">Jan 2020 – Jun 2020</span>
+            <ul class="resume-bullets">
+              <li>Automated DSP core snapshot generation using Python, reducing processing time and speeding up test creation.</li>
+              <li>Solved RTL-ISS snapshot mismatches by identifying root causes and ensuring output consistency.</li>
             </ul>
           </li>
         </ul>
@@ -76,17 +90,24 @@
         <h3>Projects</h3>
         <ul>
           <li>
-            <strong>RISC-V CPU Design</strong>
+            <strong>2-Way Superscalar Out-of-Order R10K RISC-V Processor</strong> <span class="resume-date">Fall 2024</span>
             <ul class="resume-bullets">
-              <li>Designed a 5-stage pipelined RISC-V processor in Verilog.</li>
-              <li>Implemented hazard detection and forwarding logic.</li>
+              <li>Engineered a 2-way superscalar R10K RISC-V processor with write-back DCache, dual-ported ICache, store queue, and PAg branch predictor using SystemVerilog and Verilog (CPI: 3.96).</li>
+              <li>Tested modules with Synopsys VCS and debugged signals in Verdi.</li>
             </ul>
           </li>
           <li>
-            <strong>SystemVerilog UVM Testbench</strong>
+            <strong>Adaptive Resource Allocation in Hybrid CPU-GPU Systems for Optimizing TSP</strong> <span class="resume-date">Winter 2025</span>
             <ul class="resume-bullets">
-              <li>Built reusable UVM components for IP verification.</li>
-              <li>Achieved 95% functional coverage on key modules.</li>
+              <li>Developed a dynamic scheduler to split metaheuristic TSP solvers across CPU and GPU using CUDA and C++.</li>
+              <li>Profiled execution with Nsight and VTune, achieving 30× speedup and 9× error reduction via dynamic workload reallocation.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Hardware Accelerator for Sequence-to-Graph Alignment</strong> <span class="resume-date">Winter 2025</span>
+            <ul class="resume-bullets">
+              <li>Designed a systolic-array accelerator for Smith-Waterman alignment over genome graphs using SystemVerilog.</li>
+              <li>Implemented and verified control and memory modules, achieving 30× speedup on short reads.</li>
             </ul>
           </li>
         </ul>
@@ -94,12 +115,22 @@
       <section class="resume-block">
         <h3>Skills</h3>
         <ul class="skills-list">
-          <li>SystemVerilog/UVM</li>
-          <li>RTL Design</li>
-          <li>VLSI & IC Design</li>
-          <li>Python, C++</li>
-          <li>FPGA Prototyping</li>
-          <li>Computer Architecture</li>
+          <li>C/C++</li>
+          <li>Verilog/SystemVerilog</li>
+          <li>MATLAB</li>
+          <li>Assembly</li>
+          <li>Python</li>
+          <li>Bash</li>
+          <li>UVM</li>
+          <li>Synopsys VCS</li>
+          <li>Verdi</li>
+          <li>Emulation</li>
+          <li>Performance Monitoring Tools</li>
+          <li>Intel VTune</li>
+          <li>NVIDIA Nsight</li>
+          <li>Synopsys Design Compiler</li>
+          <li>Git</li>
+          <li>Makefile</li>
         </ul>
       </section>
     </div>

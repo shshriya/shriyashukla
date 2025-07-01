@@ -192,7 +192,8 @@ body {
 }
 
 .resume-section {
-  background: #f7fafd;
+  color: #333;
+  background: linear-gradient(135deg, #e3ecf6, #f7fafd, #eaf4f8);
   padding: 5rem 1.5rem 4rem 1.5rem;
   scroll-margin-top: 7rem; /* Offset for fixed navbar */
 }

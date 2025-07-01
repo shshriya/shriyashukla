@@ -135,5 +135,30 @@
       </section>
     </div>
   </section>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("main.hero, section.resume-section");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  function onScroll() {
+    let scrollPos = window.scrollY + 120; // Offset for fixed navbar
+    let currentSection = "home";
+    sections.forEach(section => {
+      if (section.offsetTop <= scrollPos) {
+        currentSection = section.id || "home";
+      }
+    });
+    navLinks.forEach(link => {
+      link.classList.toggle(
+        "active",
+        link.getAttribute("href") === "#" + currentSection
+      );
+    });
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll(); // Set on load
+});
+</script>
 </body>
 </html>

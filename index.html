@@ -183,59 +183,52 @@
     <div class="exp-edu-header">
       <h2>Experiences &amp; Education</h2>
     </div>
-    <div class="exp-edu-content">
-      <section class="exp-block">
-        <h3>Professional Experience</h3>
-        <ul>
-          <li>
-            <strong>Rivian Automotive, Palo Alto</strong> — Design Verification Intern<br>
-            <span class="resume-date">May 2025 – Aug 2025</span>
-            <ul class="resume-bullets">
-              <li>Contributed to UVM-based design verification under the Electrical Hardware team.</li>
-            </ul>
-          </li>
-          <li>
-            <strong>Qualcomm, Bangalore</strong> — Senior Performance Verification Engineer<br>
-            <span class="resume-date">Jun 2020 – Aug 2024</span>
-            <ul class="resume-bullets">
-              <li>Verified performance for 10+ DSP cores using RTL simulation and emulation, addressing critical design issues early in the development process.</li>
-              <li>Developed micro-benchmarks in C++ and Assembly to identify and resolve performance bottlenecks in RTL simulation and emulation.</li>
-              <li>Debugged RTL setups and automation scripts, reducing workflow interruptions by over 30%.</li>
-              <li>Designed and documented performance experiments in a pre-silicon environment, providing design feedback for next-generation cores.</li>
-              <li>Diagnosed and resolved correlation issues between RTL-ISS and emulation-silicon platforms, reducing correlation error to under 5%.</li>
-              <li>Built end-to-end workflows with Python scripts to monitor power and performance across simulation platforms.</li>
-            </ul>
-          </li>
-          <li>
-            <strong>Qualcomm, Bangalore</strong> — Interim Engineering Intern<br>
-            <span class="resume-date">Jan 2020 – Jun 2020</span>
-            <ul class="resume-bullets">
-              <li>Automated DSP core snapshot generation using Python, reducing processing time and speeding up test creation.</li>
-              <li>Solved RTL-ISS snapshot mismatches by identifying root causes and ensuring output consistency.</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-      <section class="edu-block">
-        <h3>Education</h3>
-        <ul>
-          <li>
-            <strong>University of Michigan, Ann Arbor</strong> — M.S. in Electrical Engineering and Computer Science (IC & VLSI Track)<br>
-            <span class="resume-date">Aug 2024 – Dec 2025</span><br>
-            <em>Relevant Coursework:</em> Computer Architecture, VLSI for ML, Parallel Computer Architecture, Microarchitecture, VLSI Design (Fall’25), Advanced Operating Systems (Fall’25)
-          </li>
-          <li>
-            <strong>Vellore Institute of Technology, Chennai</strong> — B.Tech in Electronics and Communication Engineering<br>
-            <span class="resume-date">Jul 2016 – Jun 2020</span><br>
-            <em>Relevant Coursework:</em> Semiconductor Devices and Circuits, Digital Logic Design, Applied Linear Algebra, Digital Signal Processing, VLSI System Design, Computer Organization and Architecture
-          </li>
-        </ul>
-      </section>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Master’s in EECS, University of Michigan</h3>
+          <span class="resume-date">Aug 2024 – Dec 2025</span>
+          <p>Integrated Circuits & VLSI Track</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Design Verification Intern, Rivian Automotive</h3>
+          <span class="resume-date">May 2025 – Aug 2025</span>
+          <p>UVM-based design verification, Electrical Hardware team</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Senior Performance Verification Engineer, Qualcomm</h3>
+          <span class="resume-date">Jun 2020 – Aug 2024</span>
+          <p>Performance verification for DSP cores, RTL simulation/emulation, automation, and workflow optimization</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Interim Engineering Intern, Qualcomm</h3>
+          <span class="resume-date">Jan 2020 – Jun 2020</span>
+          <p>Automated DSP core snapshot generation, debugged RTL-ISS mismatches</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>B.Tech, VIT Chennai</h3>
+          <span class="resume-date">Jul 2016 – Jun 2020</span>
+          <p>Electronics and Communication Engineering</p>
+        </div>
+      </div>
     </div>
   </section>
   <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const sections = document.querySelectorAll("main.hero, section.resume-section, section.projects-section, section.exp-edu-section");
+  const sections = document.querySelectorAll("main.hero, section.resume-section, section.projects-section, section.exp-edu-section ");
   const navLinks = document.querySelectorAll(".nav-links a");
 
   function onScroll() {

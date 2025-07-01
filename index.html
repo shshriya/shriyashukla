@@ -13,9 +13,9 @@
       <ul class="nav-links">
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#resume">Resume</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="exp_edu.html">Experiences & Education</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="projects">Projects</a></li>
+        <li><a href="exp_edu">Experiences & Education</a></li>
+        <li><a href="contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -161,12 +161,27 @@
           <li>Implemented and verified control and memory modules, achieving 30× speedup on short reads.</li>
         </ul>
       </section>
+      <section class="project-block">
+        <h3>CNN Accelerator with Sparse Winograd Algorithm <span class="resume-date">Winter 2025 – EECS 598 Project</span></h3>
+        <ul class="project-bullets">
+          <li>Designed a Verilog-based accelerator using Winograd convolution with sparsity handling (MBM encoding, FIFO buffering).</li>
+          <li>Implemented and analyzed key modules like BWT, SPU, and ReLU; contributed area and power analysis.</li>
+        </ul>
+      </section>
+      <section class="project-block">
+        <h3>Directory-Based MSI/MOESI Cache Coherence Protocol in Murphi <span class="resume-date">Winter 2025 – EECS 570 Programming Assignment</span></h3>
+        <ul class="project-bullets">
+          <li>Implemented an advanced directory-based MSI protocol in Murphi with transient states like H_RS, H_SM and processor states like P_SM and P_MSI.</li>
+          <li>Extended the design into MOESI by adding stable states (Exclusive, Owned), transient states (e.g., H_EA, H_XD), and new message types (EData, FwdAck, AckCnt) to model realistic behaviors.</li>
+          <li>Used debugging techniques including Murphi invariants, asserts, and trace analysis to identify and resolve deadlocks and correctness issues.</li>
+        </ul>
+      </section>
       <!-- Add more projects as needed -->
     </div>
   </section>
   <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const sections = document.querySelectorAll("main.hero, section.resume-section");
+  const sections = document.querySelectorAll("main.hero, section.resume-section, section.projects-section");
   const navLinks = document.querySelectorAll(".nav-links a");
 
   function onScroll() {

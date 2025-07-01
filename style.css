@@ -1,4 +1,5 @@
 body {
+  min-height: 100vh;
   margin: 0;
   font-family: 'Sora', sans-serif;
   background: linear-gradient(135deg, #e3ecf6, #f7fafd, #eaf4f8);
@@ -192,9 +193,10 @@ body {
 }
 
 .resume-section {
+  color: #333;
+  background: linear-gradient(135deg, #e3ecf6, #f7fafd, #eaf4f8);
   padding: 5rem 1.5rem 4rem 1.5rem;
   scroll-margin-top: 7rem; /* Offset for fixed navbar */
-  /* No background here, let body handle
 }
 
 .resume-header {

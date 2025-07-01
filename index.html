@@ -12,7 +12,7 @@
     <nav class="navbar">
       <ul class="nav-links">
         <li><a href="#home" class="active">Home</a></li>
-        <li><a href="resume.html">Resume</a></li>
+        <li><a href="#resume">Resume</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="exp_edu.html">Experiences & Education</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -20,7 +20,7 @@
     </nav>
   </header>
 
-  <main class="hero">
+  <main class="hero" id="home">
     <div class="hero-content">
       <div class="text-content">
         <h1 class="name">Hello, I am Shriya Shukla</h1>
@@ -32,5 +32,77 @@
       </div>
     </div>
   </main>
+
+  <section id="resume" class="resume-section">
+    <div class="resume-header">
+      <h2>Resume</h2>
+      <a href="shriyashukla.pdf" class="download-btn" target="_blank" rel="noopener">Download Resume</a>
+    </div>
+    <div class="resume-content">
+      <section class="resume-block">
+        <h3>Education</h3>
+        <ul>
+          <li>
+            <strong>University of Michigan</strong> — M.S. in IC & VLSI Design<br>
+            <span class="resume-date">2023 – Present</span>
+          </li>
+          <li>
+            <strong>XYZ University</strong> — B.Tech in Electronics Engineering<br>
+            <span class="resume-date">2019 – 2023</span>
+          </li>
+        </ul>
+      </section>
+      <section class="resume-block">
+        <h3>Experience</h3>
+        <ul>
+          <li>
+            <strong>Verification Engineer Intern, ABC Semiconductors</strong> <span class="resume-date">Summer 2024</span>
+            <ul class="resume-bullets">
+              <li>Developed UVM-based testbenches for SoC verification.</li>
+              <li>Automated regression testing, reducing manual effort by 30%.</li>
+              <li>Collaborated with design teams to debug and resolve RTL issues.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Research Assistant, University of Michigan</strong> <span class="resume-date">2023 – Present</span>
+            <ul class="resume-bullets">
+              <li>Worked on hardware acceleration for compute-intensive applications.</li>
+              <li>Designed and validated custom processor microarchitecture modules.</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="resume-block">
+        <h3>Projects</h3>
+        <ul>
+          <li>
+            <strong>RISC-V CPU Design</strong>
+            <ul class="resume-bullets">
+              <li>Designed a 5-stage pipelined RISC-V processor in Verilog.</li>
+              <li>Implemented hazard detection and forwarding logic.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>SystemVerilog UVM Testbench</strong>
+            <ul class="resume-bullets">
+              <li>Built reusable UVM components for IP verification.</li>
+              <li>Achieved 95% functional coverage on key modules.</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="resume-block">
+        <h3>Skills</h3>
+        <ul class="skills-list">
+          <li>SystemVerilog/UVM</li>
+          <li>RTL Design</li>
+          <li>VLSI & IC Design</li>
+          <li>Python, C++</li>
+          <li>FPGA Prototyping</li>
+          <li>Computer Architecture</li>
+        </ul>
+      </section>
+    </div>
+  </section>
 </body>
 </html>

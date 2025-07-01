@@ -190,3 +190,99 @@ body {
 .typed-text, .cursor {
   display: none !important;
 }
+
+.resume-section {
+  background: #f7fafd;
+  padding: 5rem 1.5rem 4rem 1.5rem;
+  scroll-margin-top: 7rem; /* Offset for fixed navbar */
+}
+
+.resume-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto 2.5rem auto;
+  gap: 1.5rem;
+}
+
+.resume-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #222e3a;
+}
+
+.download-btn {
+  background: #222e3a;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s;
+  border: none;
+  display: inline-block;
+}
+.download-btn:hover {
+  background: #3b4b5a;
+}
+
+.resume-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.resume-block {
+  margin-bottom: 2.5rem;
+}
+
+.resume-block h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1f2937;
+  letter-spacing: 0.01em;
+}
+
+.resume-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resume-block > ul > li {
+  margin-bottom: 1.2rem;
+}
+
+.resume-date {
+  color: #6b7280;
+  font-size: 0.95em;
+  margin-left: 0.5em;
+}
+
+.resume-bullets {
+  margin-top: 0.5rem;
+  margin-left: 1.2rem;
+  list-style: disc;
+  color: #374151;
+  font-size: 1rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1.2rem;
+  margin-top: 0.5rem;
+  color: #374151;
+  font-size: 1rem;
+}
+
+.skills-list li {
+  background: #e3ecf6;
+  border-radius: 999px;
+  padding: 0.4em 1em;
+  margin: 0;
+}

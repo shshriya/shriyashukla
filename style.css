@@ -330,3 +330,47 @@ body {
   color: #374151;
   font-size: 1rem;
 }
+
+.exp-edu-section {
+  padding: 5rem 1.5rem 4rem 1.5rem;
+  scroll-margin-top: 7rem;
+}
+
+.exp-edu-header {
+  max-width: 800px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.exp-edu-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #222e3a;
+}
+
+.exp-edu-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.exp-block, .edu-block {
+  margin-bottom: 2.5rem;
+}
+
+.exp-block h3, .edu-block h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1f2937;
+  letter-spacing: 0.01em;
+}
+
+.exp-block ul, .edu-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exp-block > ul > li, .edu-block > ul > li {
+  margin-bottom: 1.2rem;
+}

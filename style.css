@@ -260,9 +260,8 @@ body {
 }
 
 .resume-date {
-  color: #6b7280;
-  font-size: 0.95em;
-  margin-left: 0.5em;
+  font-size: 0.97em;
+  color: inherit; /* or use your preferred color */
 }
 
 .resume-bullets {

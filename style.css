@@ -81,7 +81,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  text-align: left;
+  text-align: centre;
   gap: 0; /* We'll control spacing with margins below */
 }
 
@@ -145,7 +145,7 @@ body {
   .text-content {
     padding-right: 2rem;
     align-items: flex-start;
-    text-align: left;
+    text-align: centre;
   }
   .image-content {
     padding-left: 2rem;
@@ -204,7 +204,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto 2.5rem auto;
   gap: 1.5rem;
 }
@@ -233,7 +233,7 @@ body {
 }
 
 .resume-content {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -294,7 +294,7 @@ body {
 }
 
 .projects-header {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto 2.5rem auto;
 }
 
@@ -306,7 +306,7 @@ body {
 }
 
 .projects-content {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -336,7 +336,7 @@ body {
 }
 
 .exp-edu-header {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto 2.5rem auto;
 }
 
@@ -348,7 +348,7 @@ body {
 }
 
 .exp-edu-content {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -443,7 +443,7 @@ body {
 }
 
 .contact-header {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto 2.5rem auto;
 }
 

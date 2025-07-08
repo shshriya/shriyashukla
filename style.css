@@ -265,11 +265,13 @@ body {
 }
 
 .resume-bullets {
-  margin-top: 0.5rem;
-  margin-left: 1.2rem;
-  list-style: disc;
-  color: #374151;
-  font-size: 1rem;
+  list-style-type: disc !important;
+  padding-left: 1.5em !important;
+  margin-left: 0 !important;
+}
+
+.resume-bullets li {
+  display: list-item;
 }
 
 .skills-list {

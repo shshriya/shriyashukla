@@ -63,6 +63,10 @@ body {
   align-items: center;
   padding: 2.5rem 1rem;
   min-height: 60vh;
+  /* Prevent hero from forcing a full viewport gap and tighten nearby margins */
+  min-height: auto;
+  padding-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 .hero-content {
@@ -197,6 +201,9 @@ body {
   /*background: linear-gradient(135deg, #e3ecf6, #f7fafd, #eaf4f8);*/
   padding: 5rem 1.5rem 4rem 1.5rem;
   scroll-margin-top: 7rem; /* Offset for fixed navbar */
+  /* Reduce top spacing for the resume section that follows the hero */
+  margin-top: 1rem;
+  padding-top: 1rem;
 }
 
 .resume-header {

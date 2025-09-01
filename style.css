@@ -128,18 +128,23 @@ body {
   object-fit: cover;
 }
 
-/* Prevent very tall images from forcing extra vertical space */
-/* Tighten spacing for all main sections so there is no large gap between pages */
+/* Strong site-wide spacing override for all main sections */
 main.hero,
 .resume-section,
 .projects-section,
 .exp-edu-section,
 .contact-section {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  margin-top: 0;
-  margin-bottom: 0;
-  scroll-margin-top: 7rem; /* keep anchor offset for fixed navbar */
+  padding: 1.25rem 1.5rem !important;
+  margin: 0 !important;
+  scroll-margin-top: 7rem;
+}
+/* Remove large per-section paddings that appear earlier */
+.resume-section,
+.projects-section,
+.exp-edu-section,
+.contact-section {
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
 }
 
 /* Override any per-section large paddings already declared below */
